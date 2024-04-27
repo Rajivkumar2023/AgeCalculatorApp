@@ -4,25 +4,30 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background: #1866b4;
+}
 .container{
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #420ea9, #90bafc);
-    color: #fff;
-    padding: 10px;
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(135deg, #3ffe00, #f95bf9);
+    color: #0b0202;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
 }
 .calculator{
     width: 100%;
-    max-width: 600px;
-    margin-left: 10%;
+    max-width: 900px;
     margin-top: 10%;
 }
-.calculator h1{
-    font-size: 60px;
+.calculator h4{
+    font-size: 40px;
 }
 .input-box{
-    margin: 40px 0;
-    padding: 35px;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     display: flex;
     background: rgba(255,255,255,0);
@@ -30,7 +35,7 @@
 }
 .input-box input{
     flex: 1;
-    margin-right: 20px;
+    margin-right: 10px;
     padding: 14px 20px;
     border: 0;
     outline: 0;
@@ -38,16 +43,27 @@
     border-radius: 5px;
     position: relative;
 }
+
 .input-box button{
     background: #ffff76;
     border: 0;
     outline: 0;
-    padding: 15px 30px;
+    padding: 14px 20px;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 600;
     color: #333;
     cursor: pointer;
+}
+
+.result{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    background: #fff;
+    border-radius: 10px;
+    /* padding: 10px; */
 }
 
 /* this is for click any where inside input box */
@@ -62,4 +78,71 @@
     background-position: calc(100% - 10px);
     background-size: 30px;
     cursor: pointer;
+}
+/* Add styles for different parts of the age */
+.years {
+    color: red; /* Change color for years */
+}
+
+.months {
+    color: blue; /* Change color for months */
+}
+
+.days {
+    color: green; /* Change color for days */
+}
+
+.created {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Align flex items to the end of the container */
+}
+
+.created h4 {
+    font-size: 20px;
+    color: #e9e8ec;
+    margin-top: 25px;
+}
+.created span{
+    color: #f5e507;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%; /* Adjust container width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    .calculator h4{
+        font-size: 2rem;
+    }
+    .input-box {
+        flex-direction: column; /* Change flex direction to stack elements vertically */
+        padding: 20px; /* Adjust padding for the input box */
+    }
+
+    .input-box input {
+        margin-bottom: 10px; 
+        width: 100%; 
+        margin-right: 10px;
+        padding: 14px 20px;
+        border: 0;
+        outline: 0;
+        font-size: 14px;
+    }
+
+    .input-box button {
+        width: 50%; /* Set button width to 100% */
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .result{
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #333;
+        /* background: #fff; */
+        border-radius: 5px;
+        margin-bottom: 10px;
+        /* padding: 5px; */
+    }
 }
