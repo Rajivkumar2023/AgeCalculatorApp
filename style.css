@@ -59,11 +59,7 @@ body{
 .result{
     margin-top: 30px;
     font-size: 20px;
-    font-weight: 700;
-    color: #333;
-    background: #fff;
-    border-radius: 10px;
-    /* padding: 10px; */
+    color: #0b0202;    
 }
 
 /* this is for click any where inside input box */
@@ -82,14 +78,17 @@ body{
 /* Add styles for different parts of the age */
 .years {
     color: red; /* Change color for years */
+    font-weight: 900;
 }
 
 .months {
     color: blue; /* Change color for months */
+    font-weight: 900;
 }
 
 .days {
     color: green; /* Change color for days */
+    font-weight: 900;
 }
 
 .created {
@@ -138,11 +137,7 @@ body{
     .result{
         margin-top: 10px;
         font-size: 18px;
-        font-weight: 300;
         color: #333;
-        /* background: #fff; */
-        border-radius: 5px;
         margin-bottom: 10px;
-        /* padding: 5px; */
     }
 }

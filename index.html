@@ -12,7 +12,7 @@
             <h4>Age Calculator</h4>
             <div class="input-box">
                  <input type="date" id="date">
-                 <button onclick="calculateAge()">Calculate</button>
+                 <button onclick="calculateAge()">Enter</button>
             </div>
             <p id="result"> </p>
         </div> 
@@ -58,7 +58,7 @@
                 m3 = 11;
                 y3--;
             }
-            result.innerHTML = `<span class=result> You are <span class="years">${y3} years,</span> <span class="months">${m3} months</span> and <span class="days">${d3} days</span> old </span>`;
+            result.innerHTML = `<span class=result> You are <span class="years">${y3} years,</span> <span class="months">${m3} months</span> and <span class="days">${d3} days</span> old !</span>`;
         }
         function getDaysInMonth(year, month){
             return new Date(year, month, 0).getDate();
